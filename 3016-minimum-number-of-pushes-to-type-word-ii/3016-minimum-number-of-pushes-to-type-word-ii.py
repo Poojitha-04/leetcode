@@ -6,7 +6,7 @@ class Solution:
         d = dict(sorted(d.items(), key=lambda item: item[1], reverse=True))
         res=0
         keys=list(d.keys())
-        print(keys,len(keys))
+        # print(keys,len(keys))
         if len(d)<=8:
             for i in d.keys():
                 res+=d.get(i)
