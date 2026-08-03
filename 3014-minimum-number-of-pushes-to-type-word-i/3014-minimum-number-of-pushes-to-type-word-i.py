@@ -1,9 +1,5 @@
 class Solution:
     def minimumPushes(self, word: str) -> int:
-        d={}
-        for i in range(len(word)):
-            d[word[i]]=d.get(word[i],0)+1
-        print(d,len(word))
         if len(word)<=8:
             return len(word)
         elif len(word)>8 and len(word)<=16:
