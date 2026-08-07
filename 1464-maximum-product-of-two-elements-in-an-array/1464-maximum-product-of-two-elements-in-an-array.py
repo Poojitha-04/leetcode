@@ -1,4 +1,8 @@
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
-        nums.sort(reverse=True)
-        return (nums[0]-1)*(nums[1]-1)
+       num1=max(nums)
+       nums.remove(num1)
+       num1-=1
+       num2=max(nums)
+       num2-=1
+       return num1*num2
