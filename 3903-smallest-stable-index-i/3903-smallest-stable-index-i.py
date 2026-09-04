@@ -1,14 +1,13 @@
 class Solution:
     def firstStableIndex(self, nums: list[int], k: int) -> int:
-        res=math.inf
+        res=101
         for i in range(len(nums)):
             n= max(nums[0:i+1])-min(nums[i:])
-            # print(n)
+            print(n)
             if n<=k and i<res:
                 res=i
-        if res!=math.inf:
-            return res
-        return -1
+    
+        return res if res<101 else -1
             
 
         
